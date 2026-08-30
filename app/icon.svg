@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="12" fill="#0c1017"/>
+  <!-- contour motif -->
+  <path d="M12 44 Q 28 36 38 44 T 52 40" fill="none" stroke="#2b9d8f" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M16 50 Q 32 42 42 50 T 56 46" fill="none" stroke="#2b9d8f" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+  <text x="32" y="30" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#f5f6f8" text-anchor="middle">SA</text>
+</svg>

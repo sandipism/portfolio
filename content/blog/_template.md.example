@@ -1,0 +1,51 @@
+---
+title: Example Article Title
+slug: example-article
+excerpt: A short summary shown on the blog listing and card.
+date: 2026-01-15
+category: "Disaster Risk Reduction"
+tags:
+  - Flood Risk
+  - GIS
+coverImage: /images/blog/example-cover.jpg
+coverImageAlt: Describe the cover image for accessibility
+coverImageCaption: Optional figure caption below the cover image
+featured: false
+author: Sandip Acharya
+---
+
+This is the article body. Write in **Markdown**. You can use headings, lists,
+quotes, tables, images, and code blocks.
+
+## Heading Two
+
+A normal paragraph of text.
+
+- Bullet list item one
+- Bullet list item two
+
+1. Numbered list item one
+2. Numbered list item two
+
+> A blockquote for emphasis.
+
+| Column A | Column B |
+| -------- | -------- |
+| Value 1  | Value 2  |
+
+![Alternative text describing the image](/images/blog/photo.jpg)
+
+```python
+print("optional code block")
+```
+
+Links are supported: [example](https://example.com).
+
+---
+
+**How to add an article:**
+
+1. Copy this file into `content/blog/` and rename it, e.g. `my-article.md`.
+2. Remove the `_template` prefix and edit the metadata above.
+3. Write your content below the final `---`.
+4. The article is automatically available at `/blog/slug`.

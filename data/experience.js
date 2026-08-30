@@ -1,0 +1,78 @@
+export const experience = [
+  {
+    title: "Assistant Project Engineer – Flood Control and DRR",
+    period: "Nov 2023 – Present",
+    employer: "Yachiyo Engineering Co., Ltd. (YEC)",
+    project: "JICA-funded River Basin Project",
+    location: "Kathmandu, Nepal",
+    bullets: [
+      "Conduct hydrological analyses, rainfall-runoff modelling and flood frequency analysis, to inform flood risk assessment and control planning for a major river basin, directly supporting hazard mapping and flood risk reduction objectives.",
+      "Prepare and quality-review flood inundation maps using hydrodynamic models and GIS tools, translating technical risk data into planning-ready outputs for government and donor stakeholders.",
+      "Collect and manage GIS datasets on river basins, flood-prone areas, and catchments, ensuring data integrity for risk assessment and reporting deliverables.",
+      "Coordinate directly with government agencies including DWRI, NDRRMA, and DHM and stakeholder organizations to support review, validation, and dissemination of hazard and flood risk assessment outputs.",
+      "Contribute to risk-informed planning processes supporting disaster preparedness, resilience building, flood risk reduction, and potential future application in early warning and anticipatory action systems.",
+      "Support procurement and sub-contracted survey processes in line with donor (JICA) compliance requirements.",
+    ],
+  },
+  {
+    title: "Team Leader – Independent Project Evaluation",
+    period: "May 2026 – July 2026",
+    employer: "Social Welfare Council (SWC)",
+    project: null,
+    location: "Kathmandu, Nepal",
+    bullets: [
+      "Leading evaluation design, field assessments, stakeholder consultations, beneficiary interviews, and project performance reviews across multiple districts.",
+      "Assess the project relevance, effectiveness, efficiency, sustainability, participation, and impact through document review, field verification, and evidence-based analysis.",
+      "Manage a team of evaluators to coordinate evaluation activities, manage the reporting process, and develop findings and recommendations in accordance with SWC guidelines and Terms of Reference.",
+    ],
+  },
+  {
+    title: "Project Engineer",
+    period: "Aug 2021 – Sep 2023",
+    employer: "Lattice Design and Developers",
+    project: null,
+    location: "Kathmandu, Nepal",
+    bullets: [
+      "Coordinated planning, design, procurement, and construction supervision of institutional infrastructure projects, working directly with architects, engineers, contractors, clients, and local authorities.",
+      "Managed project schedules, budgets, and contractor performance to ensure timely, cost-effective, and quality-compliant delivery.",
+      "Identified and mitigated technical, operational, and construction-related risks in the delivery of safe, resilient infrastructure, including facilities for Koshish – National Mental Health Self-Help Organization, requiring close coordination with a civil-society partner serving a vulnerable population.",
+    ],
+  },
+  {
+    title: "Independent DRR & Engineering Consultant",
+    period: "Jul 2019 – Present",
+    employer: "Self-employed",
+    project: null,
+    location: "Kathmandu, Nepal",
+    bullets: [
+      "Provided technical consulting services for planning, design, and implementation of residential, institutional, and industrial infrastructure projects, ensuring compliance with Nepal Building Code and relevant engineering standards.",
+      "Integrated risk-informed and resilience-focused design considerations, including structural safety, flood protection measures, geotechnical risk assessment, and site-specific infrastructure planning.",
+      "Contributed technical inputs to municipal-level Local Disaster and Climate Resilience Plans (LDCRP) and Disaster Preparedness and Response Plans (DPRP).",
+    ],
+  },
+  {
+    title: "Technical Support and Coordination (TSC) Agent",
+    period: "Feb 2020 – Jan 2021",
+    employer: "Rolling Plans Pvt. Ltd – UNOPS",
+    project: "Socio-Technical Facilitation Consultation (STFC) Project — Government of India-funded reconstruction programme",
+    location: "Nuwakot, Nepal",
+    bullets: [
+      "Delivered field-level technical guidance on earthquake-resistant construction under a government-funded post-disaster recovery programme.",
+      "Designed and delivered on-the-job training and skills assessments for skilled and unskilled construction labour, improving build quality and disaster-resilient practices at the community level.",
+      "Supported households in navigating National Reconstruction Authority (NRA) tranche disbursement, documentation, and building-permit processes.",
+      "Led community awareness-raising on seismic risk and resilient construction techniques across diverse municipal contexts, building technical literacy among recovery-affected populations.",
+    ],
+  },
+  {
+    title: "Civil Engineer",
+    period: "Oct 2017 – Oct 2019",
+    employer: "MRB & Associates",
+    project: null,
+    location: "Kathmandu, Nepal",
+    bullets: [
+      "Conducted seismic vulnerability assessments and retrofit designs for public institutions including a UNDP field office and multiple schools and health posts under USAID's Nepal Reconstruction Engineering Services Project (NRSEP).",
+      "Participated in structural peer review of the historic Dharahara tower reconstruction, contributing technical rigor to one of Nepal's most prominent post-earthquake heritage recovery efforts.",
+      "Performed structural analysis and design of RC and steel buildings to Nepali and international codes for institutional and high-profile projects including Supreme Court of Nepal, Holiday Inn Kathmandu, and Kalika Tower.",
+    ],
+  },
+];

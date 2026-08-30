@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0c1017"/>
+  <rect width="1200" height="630" fill="url(#grid)" opacity="0.12"/>
+  <defs>
+    <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M44 0H0V44" fill="none" stroke="#9aa6b8" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <path d="M60 500 Q 260 420 420 500 T 780 470 T 1140 500" fill="none" stroke="#2b9d8f" stroke-width="4" stroke-linecap="round" opacity="0.7"/>
+  <path d="M60 540 Q 260 460 420 540 T 780 510 T 1140 540" fill="none" stroke="#2b9d8f" stroke-width="4" stroke-linecap="round" opacity="0.4"/>
+  <rect x="70" y="70" width="72" height="72" rx="12" fill="#2b9d8f" opacity="0.15"/>
+  <text x="106" y="122" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#45b8a8" text-anchor="middle">SA</text>
+  <text x="200" y="290" font-family="Arial, sans-serif" font-size="72" font-weight="800" fill="#ffffff">Sandip Acharya</text>
+  <text x="200" y="360" font-family="Arial, sans-serif" font-size="36" font-weight="600" fill="#45b8a8">Disaster Risk &amp; Resilience Specialist</text>
+  <text x="200" y="420" font-family="Arial, sans-serif" font-size="24" fill="#9aa6b8">Civil Engineering · Flood Risk · GIS · Resilient Infrastructure · Kathmandu, Nepal</text>
+</svg>
