@@ -1,6 +1,8 @@
 import { getAllBlogPosts } from "@/lib/blog/posts";
 import { siteUrl } from "@/lib/metadata";
 
+export const dynamic = "force-static";
+
 const staticRoutes = [
   "",
   "/about",
