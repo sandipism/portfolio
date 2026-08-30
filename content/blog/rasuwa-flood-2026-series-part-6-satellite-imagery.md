@@ -12,7 +12,7 @@ tags:
 author: Sandip Acharya
 ---
 
-*This is Part 6 of a series reconstructing the Rasuwa–Bhote Koshi–Trishuli flood of 26 August 2026. Start with the [full overview](/blog/reconstructing-rasuwa-bhote-koshi-trishuli-flood-2026), or read [Part 5: Sources](/blog/rasuwa-flood-2026-series-part-5-sources).*
+*This is Part 6 of a series reconstructing the Rasuwa–Bhote Koshi–Trishuli flood of 26 August 2026. Start with the [full overview](/blog/rasuwa-flood-2026-series-overview), or read [Part 5: Sources](/blog/rasuwa-flood-2026-series-part-5-sources).*
 
 ## Purpose
 
@@ -104,4 +104,4 @@ https://mapping.emergency.copernicus.eu/news/flood-in-nepal-emsr927/
 
 ---
 
-**Series complete.** Return to the [full overview](/blog/reconstructing-rasuwa-bhote-koshi-trishuli-flood-2026) or browse [all articles](/blog).
+**Series complete.** Return to the [full overview](/blog/rasuwa-flood-2026-series-overview) or browse [all articles](/blog).

@@ -11,7 +11,7 @@ tags:
 author: Sandip Acharya
 ---
 
-*This is Part 5 of a series reconstructing the Rasuwa–Bhote Koshi–Trishuli flood of 26 August 2026. Start with the [full overview](/blog/reconstructing-rasuwa-bhote-koshi-trishuli-flood-2026), or read [Part 4: Evidence and Uncertainties](/blog/rasuwa-flood-2026-series-part-4-evidence-and-uncertainties).*
+*This is Part 5 of a series reconstructing the Rasuwa–Bhote Koshi–Trishuli flood of 26 August 2026. Start with the [full overview](/blog/rasuwa-flood-2026-series-overview), or read [Part 4: Evidence and Uncertainties](/blog/rasuwa-flood-2026-series-part-4-evidence-and-uncertainties).*
 
 ## Primary / institutional
 

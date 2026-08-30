@@ -12,7 +12,7 @@ tags:
 author: Sandip Acharya
 ---
 
-*This is Part 4 of a series reconstructing the Rasuwa–Bhote Koshi–Trishuli flood of 26 August 2026. Start with the [full overview](/blog/reconstructing-rasuwa-bhote-koshi-trishuli-flood-2026), or read [Part 3: Spatial Impacts](/blog/rasuwa-flood-2026-series-part-3-spatial-impacts).*
+*This is Part 4 of a series reconstructing the Rasuwa–Bhote Koshi–Trishuli flood of 26 August 2026. Start with the [full overview](/blog/rasuwa-flood-2026-series-overview), or read [Part 3: Spatial Impacts](/blog/rasuwa-flood-2026-series-part-3-spatial-impacts).*
 
 ## Purpose
 

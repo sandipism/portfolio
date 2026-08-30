@@ -1,6 +1,6 @@
 ---
 title: "Reconstructing the Rasuwa–Bhote Koshi–Trishuli Flood of 26 August 2026"
-slug: reconstructing-rasuwa-bhote-koshi-trishuli-flood-2026
+slug: rasuwa-flood-2026-series-overview
 excerpt: "On 26 August 2026 a devastating flood surged down the Bhote Koshi and Trishuli rivers from the China–Nepal border. This article reconstructs the event as a cascading mountain hazard — from a high-mountain ice-rock collapse, to a temporary river blockage, to a debris-laden flood surge that travelled more than 150 km downstream."
 date: 2026-08-30
 category: "Disaster Risk Reduction"

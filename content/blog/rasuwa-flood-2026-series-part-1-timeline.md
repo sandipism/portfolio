@@ -13,7 +13,7 @@ tags:
 author: Sandip Acharya
 ---
 
-*This is Part 1 of a series reconstructing the Rasuwa–Bhote Koshi–Trishuli flood of 26 August 2026. Start with the [full overview](/blog/reconstructing-rasuwa-bhote-koshi-trishuli-flood-2026).*
+*This is Part 1 of a series reconstructing the Rasuwa–Bhote Koshi–Trishuli flood of 26 August 2026. Start with the [full overview](/blog/rasuwa-flood-2026-series-overview).*
 
 ## Rasuwa–Bhote Koshi–Trishuli Disaster, 26–30 August 2026
 
