@@ -138,10 +138,11 @@ export default function HomePage() {
               >
                 View My Work
               </Link>
-              <Link
-                href="/cv/Sandip_Acharya_CV.pdf"
-                download
-                className="inline-flex items-center gap-2 rounded border border-ink-600 bg-ink-800/60 px-6 py-3 text-sm font-semibold text-ink-100 transition-colors hover:border-resilience-500 hover:text-resilience-300"
+              <a
+                href={profile.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded border border-resilience-500/40 bg-resilience-500/10 px-6 py-3 text-sm font-semibold text-resilience-300 transition-colors hover:bg-resilience-500/20"
               >
                 <svg
                   className="h-4 w-4"
@@ -152,12 +153,12 @@ export default function HomePage() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 >
-                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                  <polyline points="7 10 12 15 17 10" />
-                  <line x1="12" y1="15" x2="12" y2="3" />
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                  <rect width="4" height="12" x="2" y="9" />
+                  <circle cx="4" cy="4" r="2" />
                 </svg>
-                Download CV
-              </Link>
+                LinkedIn
+              </a>
             </div>
           </Reveal>
         </div>

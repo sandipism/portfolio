@@ -74,9 +74,10 @@ export default function Header() {
             );
           })}
           <li className="ml-2">
-            <Link
-              href="/cv/Sandip_Acharya_CV.pdf"
-              download
+            <a
+              href={profile.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded border border-resilience-400 bg-resilience-600 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-resilience-500"
             >
               <svg
@@ -88,12 +89,12 @@ export default function Header() {
                 strokeLinecap="round"
                 strokeLinejoin="round"
               >
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                <polyline points="7 10 12 15 17 10" />
-                <line x1="12" y1="15" x2="12" y2="3" />
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                <rect width="4" height="12" x="2" y="9" />
+                <circle cx="4" cy="4" r="2" />
               </svg>
-              Download CV
-            </Link>
+              LinkedIn
+            </a>
           </li>
         </ul>
 
@@ -156,9 +157,10 @@ export default function Header() {
             );
           })}
           <li className="pt-2">
-            <Link
-              href="/cv/Sandip_Acharya_CV.pdf"
-              download
+            <a
+              href={profile.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setOpen(false)}
               className="flex items-center justify-center gap-2 rounded border border-resilience-400 bg-resilience-600 px-4 py-3 text-sm font-semibold text-white hover:bg-resilience-500"
             >
@@ -171,12 +173,12 @@ export default function Header() {
                 strokeLinecap="round"
                 strokeLinejoin="round"
               >
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                <polyline points="7 10 12 15 17 10" />
-                <line x1="12" y1="15" x2="12" y2="3" />
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                <rect width="4" height="12" x="2" y="9" />
+                <circle cx="4" cy="4" r="2" />
               </svg>
-              Download CV
-            </Link>
+              LinkedIn
+            </a>
           </li>
         </ul>
       </div>

@@ -70,8 +70,9 @@ export default function ContactPage() {
             </ul>
 
             <a
-              href="/cv/Sandip_Acharya_CV.pdf"
-              download
+              href={profile.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
               className="mt-8 inline-flex items-center gap-2 rounded border border-resilience-500/40 bg-resilience-500/10 px-5 py-3 text-sm font-semibold text-resilience-300 transition-colors hover:bg-resilience-500/20"
             >
               <svg
@@ -83,11 +84,11 @@ export default function ContactPage() {
                 strokeLinecap="round"
                 strokeLinejoin="round"
               >
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                <polyline points="7 10 12 15 17 10" />
-                <line x1="12" y1="15" x2="12" y2="3" />
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                <rect width="4" height="12" x="2" y="9" />
+                <circle cx="4" cy="4" r="2" />
               </svg>
-              Download CV
+              LinkedIn
             </a>
           </div>
         </Reveal>

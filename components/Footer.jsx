@@ -68,15 +68,26 @@ export default function Footer() {
             <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-ink-400">
               Connect
             </p>
-            <p className="text-sm text-ink-300">
-              Professional and social links will appear here.
-            </p>
             <a
-              href="/cv/Sandip_Acharya_CV.pdf"
-              download
-              className="mt-4 inline-flex items-center gap-2 rounded border border-resilience-500/40 bg-resilience-500/10 px-4 py-2 text-sm font-semibold text-resilience-300 transition-colors hover:bg-resilience-500/20"
+              href={profile.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-sm text-ink-200 transition-colors hover:text-resilience-300"
             >
-              Download CV
+              <svg
+                className="h-4 w-4"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                <rect width="4" height="12" x="2" y="9" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+              LinkedIn
             </a>
           </div>
         </div>

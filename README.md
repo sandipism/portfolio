@@ -35,7 +35,6 @@ components/          # reusable UI components
 content/blog/        # blog articles (Markdown + frontmatter)
 data/                # CV data (experience, projects, skills, etc.)
 lib/                 # utilities (metadata, blog reader, contact config)
-public/cv/           # downloadable CV PDF
 ```
 
 ## Content management
@@ -76,10 +75,10 @@ All CV content lives in `data/` as structured JavaScript objects
 (`experience.js`, `projects.js`, `education.js`, `skills.js`, `about.js`,
 `profile.js`). Edit these files to keep the site in sync with your CV.
 
-### CV download
+### LinkedIn
 
-Place `Sandip_Acharya_CV.pdf` in `public/cv/`. The "Download CV" buttons link
-to `/cv/Sandip_Acharya_CV.pdf`.
+The "Connect" / "LinkedIn" buttons link to the profile set as `linkedin` in
+`data/profile.js`.
 
 ### Contact form
 
