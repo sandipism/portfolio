@@ -126,4 +126,13 @@ This article reflects a working reconstruction assembled in the days immediately
 
 What is already clear is that **a single high-mountain collapse can generate a flood that threatens communities 150 km downstream in a few hours** — and that understanding these events quickly, correctly, and with honest uncertainty is one of the most useful things we can do for the people living along these rivers.
 
-*This post is supported by a detailed working file: the event-reconstruction chapters on timeline, hazard sequence, spatial impacts, evidence and uncertainties, satellite imagery and sources.*
+## The full series
+
+This overview is supported by a detailed working reconstruction, published as a multi-part series:
+
+1. [Part 1: Timeline](/blog/rasuwa-flood-2026-series-part-1-timeline) — the 26–30 August sequence, minute by minute.
+2. [Part 2: Hazard Sequence](/blog/rasuwa-flood-2026-series-part-2-hazard-sequence) — the cascading chain of failure, blockage and release.
+3. [Part 3: Spatial Impacts](/blog/rasuwa-flood-2026-series-part-3-spatial-impacts) — the source-to-impact corridor.
+4. [Part 4: Evidence and Uncertainties](/blog/rasuwa-flood-2026-series-part-4-evidence-and-uncertainties) — what is confirmed, what is not.
+5. [Part 5: Sources](/blog/rasuwa-flood-2026-series-part-5-sources) — the primary documents behind the reconstruction.
+6. [Part 6: Satellite Imagery](/blog/rasuwa-flood-2026-series-part-6-satellite-imagery) — the remote-sensing record.
