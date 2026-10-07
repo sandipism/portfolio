@@ -11,7 +11,7 @@ const reactHooksFlat = reactHooks.configs
 
 export default [
   {
-    ignores: [".next/**", "node_modules/**", "out/**"],
+    ignores: [".next/**", "node_modules/**", "out/**", "public/**"],
   },
   {
     files: ["**/*.{js,jsx,mjs,ts,tsx}"],

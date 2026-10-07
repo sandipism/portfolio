@@ -205,6 +205,39 @@ export default function HomePage() {
           ))}
         </div>
       </SectionWrapper>
+
+      {/* RASUWA EVENT MAP */}
+      <SectionWrapper
+        id="rasuwa-event-map"
+        className="border-t border-ink-800/60"
+      >
+        <SectionHeading
+          title="Rasuwa Event, Interactive GIS Map"
+          description="Interactive GIS visualization of the 2026 Rasuwa event and its surrounding landscape."
+        />
+        <Reveal delay={120}>
+          <div className="mx-auto mt-12 max-w-5xl">
+            <div className="overflow-hidden rounded-lg border border-ink-800 bg-ink-900/60">
+              <iframe
+                src="/event_layout/"
+                title="Rasuwa event interactive GIS map"
+                loading="lazy"
+                className="h-[480px] w-full sm:h-[560px]"
+              />
+            </div>
+            <div className="mt-4 text-center">
+              <Link
+                href="/event_layout/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded border border-resilience-500/40 bg-resilience-500/10 px-5 py-3 text-sm font-semibold text-resilience-300 transition-colors hover:bg-resilience-500/20"
+              >
+                Open Full Map
+              </Link>
+            </div>
+          </div>
+        </Reveal>
+      </SectionWrapper>
     </>
   );
 }
