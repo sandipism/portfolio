@@ -4,45 +4,75 @@ import { useState } from "react";
 import { contactFormConfig } from "@/lib/contactConfig";
 
 const initialForm = { name: "", email: "", subject: "", message: "" };
+const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+
+function validate(values) {
+  const errors = {};
+  if (!values.name.trim()) errors.name = "Please enter your name.";
+  if (!values.email.trim()) {
+    errors.email = "Please enter your email address.";
+  } else if (!EMAIL_PATTERN.test(values.email.trim())) {
+    errors.email = "Please enter a valid email address.";
+  }
+  if (!values.subject.trim()) errors.subject = "Please enter a subject.";
+  if (!values.message.trim()) errors.message = "Please enter a message.";
+  return errors;
+}
+
+function buildMailtoUrl({ name, email, subject, message }) {
+  const body = `${message}\n\n—\nFrom: ${name}\nEmail: ${email}`;
+  return `mailto:${contactFormConfig.recipient}?subject=${encodeURIComponent(
+    subject.trim()
+  )}&body=${encodeURIComponent(body)}`;
+}
 
 export default function ContactForm() {
   const [form, setForm] = useState(initialForm);
-  const [status, setStatus] = useState("");
+  const [errors, setErrors] = useState({});
+  const [status, setStatus] = useState(null);
+  const [sentUrl, setSentUrl] = useState("");
 
   const handleChange = (e) => {
-    setForm((f) => ({ ...f, [e.target.name]: e.target.value }));
+    const { name, value } = e.target;
+    setForm((f) => ({ ...f, [name]: value }));
+    setErrors((errs) => {
+      if (!(name in errs)) return errs;
+      const next = { ...errs };
+      delete next[name];
+      return next;
+    });
+    setStatus(null);
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    if (!contactFormConfig.endpoint) {
-      setStatus(
-        "This form is not yet connected to a sending service. Please use the contact details below to reach me directly."
-      );
+    const found = validate(form);
+    setErrors(found);
+
+    const firstInvalid = Object.keys(found)[0];
+    if (firstInvalid) {
+      setStatus({
+        type: "error",
+        message: "Please fix the highlighted fields and try again.",
+      });
+      document.getElementById(firstInvalid)?.focus();
       return;
     }
-    try {
-      const res = await fetch(contactFormConfig.endpoint, {
-        method: contactFormConfig.method,
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
-      });
-      const data = await res.json();
-      setStatus(
-        data.success
-          ? "Thank you — your message has been sent."
-          : "There was a problem sending your message. Please try again or email me directly."
-      );
-    } catch {
-      setStatus(
-        "There was a problem sending your message. Please try again or email me directly."
-      );
-    }
+
+    const url = buildMailtoUrl(form);
+    setSentUrl(url);
+    setStatus({
+      type: "success",
+      message:
+        "Your email app should now open with your message ready — press Send there to deliver it to me.",
+    });
+    window.location.href = url;
   };
 
   return (
     <form
       onSubmit={handleSubmit}
+      noValidate
       className="rounded-lg border border-ink-800 bg-ink-900/60 p-6 sm:p-8"
     >
       <div className="grid gap-5 sm:grid-cols-2">
@@ -52,6 +82,7 @@ export default function ContactForm() {
           name="name"
           value={form.name}
           onChange={handleChange}
+          error={errors.name}
           autoComplete="name"
           required
         />
@@ -62,6 +93,7 @@ export default function ContactForm() {
           type="email"
           value={form.email}
           onChange={handleChange}
+          error={errors.email}
           autoComplete="email"
           required
         />
@@ -73,6 +105,7 @@ export default function ContactForm() {
           name="subject"
           value={form.subject}
           onChange={handleChange}
+          error={errors.subject}
           required
         />
       </div>
@@ -90,9 +123,18 @@ export default function ContactForm() {
           value={form.message}
           onChange={handleChange}
           required
-          className="w-full rounded border border-ink-700 bg-ink-950/60 px-4 py-3 text-ink-100 placeholder-ink-500 transition-colors focus:border-resilience-500 focus:outline-none"
+          aria-invalid={errors.message ? true : undefined}
+          aria-describedby={errors.message ? "message-error" : undefined}
+          className={`w-full rounded border bg-ink-950/60 px-4 py-3 text-ink-100 placeholder-ink-500 transition-colors focus:border-resilience-500 focus:outline-none ${
+            errors.message ? "border-amber-500/60" : "border-ink-700"
+          }`}
           placeholder="How can I help?"
         />
+        {errors.message && (
+          <p id="message-error" className="mt-1.5 text-xs text-amber-300">
+            {errors.message}
+          </p>
+        )}
       </div>
 
       <div className="mt-6">
@@ -105,18 +147,41 @@ export default function ContactForm() {
       </div>
 
       {status && (
-        <p
+        <div
           role="status"
-          className="mt-4 rounded border border-ink-700 bg-ink-800/60 px-4 py-3 text-sm text-ink-200"
+          className={`mt-4 rounded border px-4 py-3 text-sm leading-relaxed ${
+            status.type === "success"
+              ? "border-resilience-500/40 bg-resilience-500/10 text-resilience-300"
+              : "border-amber-500/40 bg-amber-500/10 text-amber-300"
+          }`}
         >
-          {status}
-        </p>
+          <p>{status.message}</p>
+          {status.type === "success" && (
+            <p className="mt-2">
+              Nothing opened?{" "}
+              <a
+                href={sentUrl}
+                className="font-semibold underline underline-offset-2 hover:text-resilience-400"
+              >
+                Open the pre-filled email
+              </a>
+              , or write directly to{" "}
+              <a
+                href={`mailto:${contactFormConfig.recipient}`}
+                className="font-semibold underline underline-offset-2 hover:text-resilience-400"
+              >
+                {contactFormConfig.recipient}
+              </a>
+              .
+            </p>
+          )}
+        </div>
       )}
     </form>
   );
 }
 
-function Field({ id, label, ...props }) {
+function Field({ id, label, error, ...props }) {
   return (
     <div>
       <label
@@ -127,9 +192,18 @@ function Field({ id, label, ...props }) {
       </label>
       <input
         id={id}
+        aria-invalid={error ? true : undefined}
+        aria-describedby={error ? `${id}-error` : undefined}
         {...props}
-        className="w-full rounded border border-ink-700 bg-ink-950/60 px-4 py-3 text-ink-100 placeholder-ink-500 transition-colors focus:border-resilience-500 focus:outline-none"
+        className={`w-full rounded border bg-ink-950/60 px-4 py-3 text-ink-100 placeholder-ink-500 transition-colors focus:border-resilience-500 focus:outline-none ${
+          error ? "border-amber-500/60" : "border-ink-700"
+        }`}
       />
+      {error && (
+        <p id={`${id}-error`} className="mt-1.5 text-xs text-amber-300">
+          {error}
+        </p>
+      )}
     </div>
   );
 }
