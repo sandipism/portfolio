@@ -23,7 +23,9 @@ export default function AboutPage() {
       <div className="mt-12 grid gap-10 lg:grid-cols-[1.4fr_1fr]">
         <Reveal>
           <div className="prose-article text-base leading-relaxed text-ink-300">
-            <p>{aboutSummary.professionalSummary}</p>
+            {aboutSummary.professionalSummary.map((paragraph, i) => (
+              <p key={i}>{paragraph}</p>
+            ))}
           </div>
         </Reveal>
 

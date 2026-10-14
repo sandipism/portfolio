@@ -2,7 +2,11 @@ export const aboutSummary = {
   heading: "About Me",
   shortIntro:
     "Civil Engineer and Disaster Risk & Resilience Specialist based in Kathmandu, Nepal, with 8 years of experience across disaster risk reduction, flood risk management, resilient infrastructure, post-disaster recovery, and GIS-based risk assessment.",
-  professionalSummary: `Civil Engineer and Disaster Risk & Resilience Specialist with 8 years of experience across disaster risk reduction, post-disaster recovery, flood risk management, and resilient infrastructure. I work at the intersection of civil engineering, hydrology, GIS, and evidence-based disaster risk assessment to support governments, international agencies, and development partners in building safer, more resilient communities. My work spans hydrological flood risk analysis and hazard mapping, seismic vulnerability assessment, resilient infrastructure planning and design, and community-level capacity building. I have coordinated directly with government agencies and international organizations, delivered technical assistance in government-funded and donor-funded programmes, and contributed to risk-informed planning and monitoring and evaluation across Nepal.`,
+  professionalSummary: [
+    "I am a Civil Engineer and Disaster Risk & Resilience Specialist with 8 years of experience in disaster risk reduction, post-disaster recovery, flood risk management, and resilient infrastructure. My work focuses on understanding how natural hazards affect infrastructure and communities, and translating technical evidence into practical solutions for reducing disaster risk and strengthening resilience.",
+    "My experience spans flood hazard and risk assessment, hydrological analysis, GIS-based risk mapping, post-disaster infrastructure recovery, and climate-resilient infrastructure planning. I have contributed to government and development partner programmes in Nepal, combining engineering knowledge, field experience, and data-driven analysis to support risk-informed decision-making.",
+    "I am particularly interested in bridging civil engineering and disaster risk management to develop infrastructure solutions that account for changing climate conditions, extreme events, and residual risks. My goal is to contribute to infrastructure systems that not only withstand hazards but also protect lives, recover more efficiently, and support long-term community resilience.",
+  ],
   experienceYears: "8 years",
   keyThemes: [
     "8 years of experience",
